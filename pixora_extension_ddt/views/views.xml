@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="pixora_extension_ddt.list">
+      <field name="name">pixora_extension_ddt list</field>
+      <field name="model">pixora_extension_ddt.pixora_extension_ddt</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="pixora_extension_ddt.action_window">
+      <field name="name">pixora_extension_ddt window</field>
+      <field name="res_model">pixora_extension_ddt.pixora_extension_ddt</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="pixora_extension_ddt.action_server">
+      <field name="name">pixora_extension_ddt server</field>
+      <field name="model_id" ref="model_pixora_extension_ddt_pixora_extension_ddt"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="pixora_extension_ddt" id="pixora_extension_ddt.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="pixora_extension_ddt.menu_1" parent="pixora_extension_ddt.menu_root"/>
+    <menuitem name="Menu 2" id="pixora_extension_ddt.menu_2" parent="pixora_extension_ddt.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="pixora_extension_ddt.menu_1_list" parent="pixora_extension_ddt.menu_1"
+              action="pixora_extension_ddt.action_window"/>
+    <menuitem name="Server to list" id="pixora_extension_ddt" parent="pixora_extension_ddt.menu_2"
+              action="pixora_extension_ddt.action_server"/>
+-->
+  </data>
+</odoo>
